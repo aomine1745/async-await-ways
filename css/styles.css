@@ -1,0 +1,25 @@
+.logoBox {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);;
+}
+.main-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 200px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.bnt-req {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.pokeapi-res {
+	text-align: center;
+}

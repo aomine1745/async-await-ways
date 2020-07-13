@@ -1,0 +1,74 @@
+/*general*/
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	min-height: 100vh;
+	font-family: 'Poppins', sans-serif;
+	color: #212121;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*clases*/
+.container {
+	width: 80%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btn {
+	position: relative;
+	outline: none;
+	border: none;
+	padding: 12px 24px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 18px;
+	border-radius: 50px;
+	background-size: 400%;
+	animation: animate 5s linear infinite;
+	box-shadow: 0 4px 20px 0 rgba(24, 52, 117, .2);
+	cursor: pointer;
+	overflow: hidden;
+}
+.btn-one {
+	background-image: linear-gradient(90deg, #7c32ff, #c738d8, #9334F2, #7c32ff);
+}
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 400%;
+	}
+}
+.btn-ripple {
+	position: absolute;
+	background-color: #fff;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	border-radius: 50%;
+	animation: ripple 1s linear infinite;
+}
+@keyframes ripple {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: .5;
+	}
+	100% {
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
+}
