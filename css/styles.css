@@ -7,6 +7,9 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);;
 }
+.main-title {
+	text-align: center;
+}
 .main-content {
 	display: flex;
 	justify-content: center;

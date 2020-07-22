@@ -2,8 +2,8 @@ const buttons = document.querySelectorAll('.btn')
 
 buttons.forEach(btn => {
 	btn.addEventListener('click', function (e) {
-		const x = e.clientX - e.target.offsetLeft
-		const y = e.clientY - e.target.offsetTop
+		const x = e.offsetX
+		const y = e.offsetY
 
 		const ripples = document.createElement('span')
 		ripples.setAttribute('class', 'btn-ripple')
@@ -14,6 +14,6 @@ buttons.forEach(btn => {
 
 		setTimeout(() => {
 			ripples.remove()
-		}, 1000)
+		}, 750)
 	})
 })

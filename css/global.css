@@ -44,6 +44,9 @@ a:hover {
 .btn-one {
 	background-image: linear-gradient(90deg, #7c32ff, #c738d8, #9334F2, #7c32ff);
 }
+.btn-two {
+	background-image: linear-gradient(90deg, #2D1DE0, #2674D4, #1E45EB, #2D1DE0);
+}
 @keyframes animate {
 	0% {
 		background-position: 0%;
@@ -58,7 +61,7 @@ a:hover {
 	transform: translate(-50%, -50%);
 	pointer-events: none;
 	border-radius: 50%;
-	animation: ripple 1s linear infinite;
+	animation: ripple .75s linear;
 }
 @keyframes ripple {
 	0% {
